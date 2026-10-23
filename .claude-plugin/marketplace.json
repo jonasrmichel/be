@@ -1,0 +1,15 @@
+{
+  "name": "directives",
+  "description": "High-level directives for Claude Code plan mode.",
+  "owner": {
+    "name": "Jonas Michel",
+    "email": "jonasrmichel@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "directives",
+      "source": "./",
+      "description": "Reusable high-level directives that Claude adopts and appends to your plan."
+    }
+  ]
+}

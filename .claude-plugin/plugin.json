@@ -1,0 +1,16 @@
+{
+  "name": "directives",
+  "version": "0.1.0",
+  "description": "Reusable high-level directives (architect, director, ...) that Claude adopts for the session and appends verbatim to the current plan. Invoke with /directive <name>.",
+  "author": {
+    "name": "Jonas Michel",
+    "email": "jonasrmichel@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "plan-mode",
+    "directives",
+    "planning",
+    "prompts"
+  ]
+}
