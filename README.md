@@ -36,7 +36,7 @@ In plan mode, once the plan has taken shape:
 /directive                                    # asks which directive(s) to apply
 ```
 
-The plan ends with:
+Running `/directive architect keep the change small` adds this to the end of the plan:
 
 ```markdown
 ## Directives
