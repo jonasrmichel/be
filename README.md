@@ -1,4 +1,4 @@
-# 🧭 directives
+# ♟️ directives
 
 A Claude Code plugin for the high-level directives you'd otherwise retype at the end of
 every plan. Run `/directive <name>` in plan mode and Claude:
