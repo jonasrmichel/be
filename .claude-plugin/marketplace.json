@@ -1,5 +1,5 @@
 {
-  "name": "directives",
+  "name": "be",
   "description": "High-level directives for Claude Code plan mode.",
   "owner": {
     "name": "Jonas Michel",
@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "directives",
+      "name": "be",
       "source": "./",
       "description": "Reusable high-level directives that Claude adopts and appends to your plan."
     }

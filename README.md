@@ -1,7 +1,7 @@
-# ♟️ directives
+# 🧘 be
 
 A Claude Code plugin for the high-level directives you'd otherwise retype at the end of
-every plan. Run `/directive <name>` in plan mode and Claude:
+every plan. Run `/be <name>` in plan mode and Claude:
 
 1. **adopts** the directive for the rest of the session,
 2. **appends** it, word for word, to a `## Directives` section at the end of the plan, so
@@ -18,25 +18,25 @@ every plan. Run `/directive <name>` in plan mode and Claude:
 ## Install
 
 ```
-/plugin marketplace add jonasrmichel/directives
-/plugin install directives@directives
+/plugin marketplace add jonasrmichel/be
+/plugin install be@be
 ```
 
-Restart Claude Code. The skill shows up as `/directive`. Its fully qualified name is
-`/directives:directive`, which you only need if another skill is also named `directive`.
+Restart Claude Code. The skill shows up as `/be`. Its fully qualified name is
+`/be:be`, which you only need if another skill is also named `be`.
 
 ## Usage
 
 In plan mode, once the plan has taken shape:
 
 ```
-/directive architect                          # one directive
-/directive architect director                 # several, stacked
-/directive architect keep the change small    # trailing text is added as an extra directive
-/directive                                    # asks which directive(s) to apply
+/be architect                          # one directive
+/be architect director                 # several, stacked
+/be architect keep the change small    # trailing text is added as an extra directive
+/be                                    # asks which directive(s) to apply
 ```
 
-Running `/directive architect keep the change small` adds this to the end of the plan:
+Running `/be architect keep the change small` adds this to the end of the plan:
 
 ```markdown
 ## Directives
@@ -49,7 +49,7 @@ keep the change small
 ```
 
 Running a directive again replaces its entry rather than duplicating it. Outside plan mode,
-`/directive <name>` just adopts the directive for the session.
+`/be <name>` just adopts the directive for the session.
 
 The skill is user-invoked only (`disable-model-invocation: true`), so Claude never applies a
 directive on its own.
@@ -57,7 +57,7 @@ directive on its own.
 ## Add your own
 
 Fork the repo and add a section to the **Directives** list at the bottom of
-[`skills/directive/SKILL.md`](skills/directive/SKILL.md). The heading is the directive's
+[`skills/be/SKILL.md`](skills/be/SKILL.md). The heading is the directive's
 name, and the text under it is what gets copied into the plan:
 
 ```markdown
@@ -65,7 +65,7 @@ name, and the text under it is what gets copied into the plan:
 Review like a staff engineer: ...
 ```
 
-→ `/directive reviewer`. Then install from your fork: `/plugin marketplace add <you>/directives`.
+→ `/be reviewer`. Then install from your fork: `/plugin marketplace add <you>/be`.
 
 The directives live inside `SKILL.md` on purpose. Claude Code won't list or read files
 outside your project without asking, so keeping everything in the one file the skill loads
@@ -74,8 +74,8 @@ means you never get permission prompts.
 ## Manual install (without the plugin system)
 
 ```sh
-git clone https://github.com/jonasrmichel/directives.git
-cp -r directives/skills/directive ~/.claude/skills/directive
+git clone https://github.com/jonasrmichel/be.git
+cp -r be/skills/be ~/.claude/skills/be
 ```
 
 ## What this plugin runs

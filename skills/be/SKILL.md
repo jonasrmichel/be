@@ -1,14 +1,14 @@
 ---
-name: directive
+name: be
 description: >
   Apply one or more high-level directives (architect, director, ...). Claude adopts the
   stance for the rest of the session and appends each directive verbatim to the current
-  plan. Invoke at the end of plan mode, e.g. "/directive architect".
+  plan. Invoke at the end of plan mode, e.g. "/be architect".
 argument-hint: "<name> [<name>...] [extra directives]"
 disable-model-invocation: true
 ---
 
-# Directive
+# Be
 
 Arguments: $ARGUMENTS
 
